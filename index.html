@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aladin Mess</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Linking Swiper JS, library used for my carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="left-header">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
+
+        <div class="logo-container">
+          <img src="images/logo.svg" alt="Aladin Mess Logo" class="logo" />
+        </div>
+
+        <ul class="right-header">
+          <li><button class="order-btn">Order Online</button></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <!-- Carousel built with help from this video: https://www.youtube.com/watch?v=VUtJ7FWCfZA-->
+      <div class="carousel-container">
+        <div class="swiper-slide-button swiper-button-prev"></div>
+
+        <div class="slider-wrapper">
+
+          <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide">
+              <img src="images/brisket_masala.svg" class="card-image" />
+              <p class="food-name">Brisket masala</p>
+            </div>
+            <div class="card-item swiper-slide">
+              <img src="images/naan.svg" class="card-image" />
+              <p class="food-name">Naan</p>
+            </div>
+            <div class="card-item swiper-slide">
+              <img src="images/lamb_kebab.svg" class="card-image" />
+              <p class="food-name">Lamb kebab</p>
+            </div>
+            <div class="card-item swiper-slide">
+              <img src="images/mango_lassi.svg" class="card-image" />
+              <p class="food-name">Mango lassi</p>
+            </div>
+            <div class="card-item swiper-slide">
+              <img src="images/prawn_korma.svg" class="card-image" />
+              <p class="food-name">Prawn korma</p>
+            </div>
+            <div class="card-item swiper-slide">
+              <img src="images/chicken_tikka.svg" class="card-image" />
+              <p class="food-name">Chicken tikka</p>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- Navigation -->
+        <div class="swiper-slide-button swiper-button-next"></div>
+      </div>
+    </div>
+
+    <!-- Linking Swiper JS Script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
