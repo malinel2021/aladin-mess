@@ -1,9 +1,10 @@
 const swiper = new Swiper(".slider-wrapper", {
   loop: true,
   grabCursor: true,
-  spaceBetween: true,
+  spaceBetween: 20,
   grabCursor: true,
-  initialSlide: 1,
+  initialSlide: 0,
+  centeredSlides: true,
 
   pagination: {
     el: ".swiper-pagination",
