@@ -12,26 +12,44 @@
     />
   </head>
   <body>
-    <div class="page-content">
-      <header>
-        <div class="header-container">
-          <ul class="left-header">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Menu</a></li>
-          </ul>
+    <header>
+      <div class="header-container">
+        <ul class="left-header">
+          <li class="current"><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
 
-          <div class="logo-container">
-            <img src="images/logo.svg" alt="Aladin Mess Logo" class="logo" />
-          </div>
-
-          <ul class="right-header">
-            <li><button class="order-btn">Order Online</button></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
+        <div class="logo-container">
+          <img src="images/logo.svg" alt="Aladin Mess Logo" class="logo" />
         </div>
-      </header>
 
+        <ul class="right-header">
+          <li><button class="lang-btn"></button></li>
+          <li><button class="order-btn">Order Online</button></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Burger visuals, animations and usage built with help from this website: https://www.w3schools.com/howto/howto_css_menu_icon.asp -->
+      <div class="burger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <div class="burger-dropdown" id="burgerDropdown">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Order Online</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="page-content">
       <div class="main-container">
         <!-- Carousel built with help from this video: https://www.youtube.com/watch?v=VUtJ7FWCfZA-->
         <div class="carousel-container">
@@ -40,27 +58,47 @@
           <div class="slider-wrapper">
             <div class="card-list swiper-wrapper">
               <div class="card-item swiper-slide">
-                <img src="images/lamb_kebab.svg" class="card-image" />
+                <img
+                  src="images/lamb_kebab.svg"
+                  class="card-image"
+                  alt="Lamb kebab"
+                />
                 <p class="food-name">Lamb kebab</p>
               </div>
               <div class="card-item swiper-slide">
-                <img src="images/mango_lassi.svg" class="card-image" />
+                <img
+                  src="images/mango_lassi.svg"
+                  class="card-image"
+                  alt="Mango lassi"
+                />
                 <p class="food-name">Mango lassi</p>
               </div>
               <div class="card-item swiper-slide">
-                <img src="images/prawn_korma.svg" class="card-image" />
+                <img
+                  src="images/prawn_korma.svg"
+                  class="card-image"
+                  alt="Prawn korma"
+                />
                 <p class="food-name">Prawn korma</p>
               </div>
               <div class="card-item swiper-slide">
-                <img src="images/chicken_tikka.svg" class="card-image" />
+                <img
+                  src="images/chicken_tikka.svg"
+                  class="card-image"
+                  alt="Chicken tikka"
+                />
                 <p class="food-name">Chicken tikka</p>
               </div>
               <div class="card-item swiper-slide">
-                <img src="images/brisket_masala.svg" class="card-image" />
+                <img
+                  src="images/brisket_masala.svg"
+                  class="card-image"
+                  alt="Brisket masala"
+                />
                 <p class="food-name">Brisket masala</p>
               </div>
               <div class="card-item swiper-slide">
-                <img src="images/naan.svg" class="card-image" />
+                <img src="images/naan.svg" class="card-image" alt="Naan" />
                 <p class="food-name">Naan</p>
               </div>
             </div>
@@ -82,19 +120,25 @@
           <div class="find-us-text">
             <h2>Find us here!</h2>
             <div class="info-line">
-              <span class="icon"> <img src="images/icons/phone.png" /></span>
+              <span class="icon">
+                <img src="images/icons/phone.png" alt="Phone icon"
+              /></span>
               <span class="info-text">+853 2808 0250</span>
             </div>
 
             <div class="info-line">
-              <span class="icon"> <img src="images/icons/map.png" /></span>
+              <span class="icon">
+                <img src="images/icons/map.png" alt="Map icon"
+              /></span>
               <span class="info-text"
                 >2/F, 60 Russell Street,<br />Causeway Bay, Hong Kong</span
               >
             </div>
 
             <div class="info-line">
-              <span class="icon"> <img src="images/icons/clock.png" /></span>
+              <span class="icon">
+                <img src="images/icons/clock.png" alt="Clock icon"
+              /></span>
               <span class="info-text">Everyday 11:45–15:00, 18:00–22:45</span>
             </div>
           </div>
@@ -108,33 +152,44 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              alt="Map showing location of Aladin Mess restaurant"
             ></iframe>
           </div>
         </div>
 
         <div class="social-media">
-          <img src="images/icons/facebook.png" />
-          <img src="images/icons/twitter.png" />
-          <img src="images/icons/instagram.png" />
+          <img src="images/icons/facebook.png" alt="Facebook icon" />
+          <img src="images/icons/twitter.png" alt="Twitter icon" />
+          <img src="images/icons/instagram.png" alt="Instagram icon" />
         </div>
 
-        <!-- Mandala 1 - top left -->
+        <!-- Mandala 1 (top left) -->
         <div class="mandala mandala-left mandala-1">
           <img src="images/mandala_left.png" alt="Mandala Left" />
         </div>
 
-        <!-- Mandala 2 - top right -->
+        <!-- Mandala 2 (top right) -->
         <div class="mandala mandala-right mandala-2">
           <img src="images/mandala_right.png" alt="Mandala Right" />
         </div>
 
-        <!-- Mandala 3 - bottom left -->
+        <!-- Mandala 3 (bottom left) -->
         <div class="mandala mandala-left mandala-3">
           <img src="images/mandala_left.png" alt="Mandala Left" />
         </div>
 
-        <!-- Mandala 4 - bottom right -->
+        <!-- Mandala 4 (bottom right) -->
         <div class="mandala mandala-right mandala-4">
+          <img src="images/mandala_right.png" alt="Mandala Right" />
+        </div>
+
+        <!-- Mandala 5 (bottom bottom left) -->
+        <div class="mandala mandala-left mandala-5">
+          <img src="images/mandala_left.png" alt="Mandala Right" />
+        </div>
+
+        <!-- Mandala 6 (bottom bottom right) -->
+        <div class="mandala mandala-left mandala-6">
           <img src="images/mandala_right.png" alt="Mandala Right" />
         </div>
       </div>

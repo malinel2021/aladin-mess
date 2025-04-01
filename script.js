@@ -28,3 +28,10 @@ const swiper = new Swiper(".slider-wrapper", {
     },
   },
 });
+
+function myFunction(x) {
+  x.classList.toggle("change");
+
+  var dropdown = document.getElementById("burgerDropdown");
+  dropdown.classList.toggle("open");
+}
