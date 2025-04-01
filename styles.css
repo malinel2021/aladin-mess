@@ -23,6 +23,10 @@ header {
   text-decoration: underline #2a8447 3px;
 }
 
+.current:hover {
+  text-decoration: underline #1e5d32 3px;
+}
+
 .burger-dropdown {
   display: none;
 }
@@ -359,6 +363,23 @@ header {
   width: auto;
 }
 
+@media (max-width: 375px) {
+  .burger,
+  .burger-dropdown.open {
+    left: 2% !important;
+  }
+
+  .lang-btn {
+    font-size: 10px;
+    padding: auto;
+    right: 6%;
+  }
+
+  .find-us-text h2 {
+    font-size: 24px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .main-container {
     width: 60%;
@@ -414,6 +435,10 @@ header {
   .mandala-5,
   .mandala-6 {
     display: none !important;
+  }
+
+  .lang-btn {
+    right: 15%;
   }
 }
 
@@ -533,5 +558,107 @@ header {
   .header-container {
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (min-width: 2560px) {
+  .mandala img {
+    height: 500px;
+    width: auto;
+  }
+
+  .mandala {
+    display: block;
+  }
+
+  .mandala-1 {
+    top: 20%;
+  }
+
+  .mandala-2 {
+    top: 40%;
+  }
+
+  .mandala-3 {
+    top: 60%;
+  }
+
+  .mandala-4 {
+    top: 80%;
+  }
+
+  .mandala-5 {
+    display: block;
+    top: 100%;
+  }
+
+  .mandala-6 {
+    display: block;
+    top: 120%;
+  }
+
+  .main-container {
+    width: 60%; /* More width on large screens */
+    padding: 40px 100px;
+  }
+
+  .intro-line {
+    font-size: 100px;
+  }
+
+  .info-text {
+    font-size: 50px;
+  }
+
+  .find-us-container {
+    margin: 50px 100px 50px;
+  }
+
+  .social-media {
+    transform: scale(3);
+  }
+
+  .find-us-text h2 {
+    font-size: 70px;
+  }
+
+  .logo-container {
+    height: 400px;
+  }
+
+  .left-header li a,
+  .right-header li a {
+    font-size: 70px;
+  }
+
+  .logo {
+    height: 100%;
+  }
+
+  .order-btn {
+    font-size: 70px;
+    padding: 12px 28px;
+  }
+
+  .swiper-pagination-bullet {
+    height: 40px;
+    width: 40px;
+  }
+
+  .card-image {
+    max-height: 1000px;
+  }
+
+  .carousel-container {
+    padding-top: 100px;
+  }
+
+  .slider-wrapper {
+    max-width: 1600px;
+  }
+
+  .lang-btn {
+    right: 20%;
+    bottom: 25%;
   }
 }
